@@ -5,7 +5,7 @@ import React, {
   ChangeEvent,
   FormEvent,
 } from "react";
-import { TodoContext, TodoActionsKind } from "../store";
+import { TodoContext, TodoActionsKind } from "../../../store";
 
 export default function TodoInput(): ReactNode {
   const [todo, setTodo] = useState<string>("");
@@ -49,6 +49,7 @@ export default function TodoInput(): ReactNode {
         <input
           className="w-full text-dark text-3xl font-thin placeholder:italic placeholder:text-lightgrey focus:outline-none ml-1"
           onChange={handleChange}
+          autoFocus
           value={todo}
           type="text"
           placeholder="What needs to be done?"

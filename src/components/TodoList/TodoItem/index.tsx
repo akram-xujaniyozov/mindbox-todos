@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode } from "react";
 import classNames from "classnames";
-import { TodoType, TodoContext, TodoActionsKind } from "../store";
+import { TodoType, TodoContext, TodoActionsKind } from "../../../store";
 
 type TodoItemProps = {
   todo: TodoType;

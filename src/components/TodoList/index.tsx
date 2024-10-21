@@ -1,6 +1,7 @@
 import React, { ReactNode, useContext, Fragment, useState } from "react";
-import { TodoContext, TodoActionsKind, TodoType } from "../store";
+import { TodoContext, TodoActionsKind, TodoType } from "../../store";
 
+import TodoInput from "./TodoInput";
 import TodoItem from "./TodoItem";
 import TodoButton from "./TodoButton";
 
@@ -66,6 +67,7 @@ export default function TodoList(): ReactNode {
 
   return (
     <Fragment>
+      <TodoInput />
       <ul>{renderedTodos}</ul>
       <div className="flex items-center justify-between px-3 py-2 border-b-[1px] border-grey-200">
         <p className="font-extralight text-sm text-darkgrey">
