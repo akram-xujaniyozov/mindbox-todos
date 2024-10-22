@@ -29,7 +29,7 @@ export default function TodoInput(): ReactNode {
       onSubmit={handleSubmit}
       className="flex w-full border-b-2 border-neutral-200"
     >
-      <button className="bg-transparent px-3 py-4">
+      <button type="submit" className="bg-transparent px-3 py-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
