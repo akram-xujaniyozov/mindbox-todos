@@ -4,9 +4,10 @@
   "description": "Created application using React, Typescript",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "serve": "webpack-dev-server",
     "build": "webpack --mode production",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "start": "npm install && npm run serve"
   },
   "keywords": [],
   "author": "",
